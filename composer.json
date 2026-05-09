@@ -1,8 +1,8 @@
 {
-  "name": "parfaitementweb/filament-plugin-translatable-inline",
-  "description": "An inline translation plugin for Filament 4.",
+  "name": "ncoo-dev/filament-plugin-translatable-inline",
+  "description": "An inline translation plugin for Filament 5.",
   "keywords": [
-    "parfaitementweb",
+    "ncoo-dev",
     "laravel",
     "filament",
     "translatable",
@@ -10,16 +10,16 @@
     "lara-zeus",
     "inline"
   ],
-  "homepage": "https://github.com/parfaitementweb/filament-plugin-translatable-inline",
+  "homepage": "https://github.com/ncoo-dev/filament-plugin-translatable-inline",
   "support": {
-    "issues": "https://github.com/parfaitementweb/filament-plugin-translatable-inline",
-    "source": "https://github.com/parfaitementweb/filament-plugin-translatable-inline"
+    "issues": "https://github.com/ncoo-dev/filament-plugin-translatable-inline",
+    "source": "https://github.com/ncoo-dev/filament-plugin-translatable-inline"
   },
   "license": "MIT",
   "require": {
     "php": "^8.2",
-    "filament/forms": "^4.0",
-    "lara-zeus/spatie-translatable": "^1.0"
+    "filament/forms": "^5.0",
+    "lara-zeus/spatie-translatable": "^2.0"
   },
   "autoload": {
     "psr-4": {

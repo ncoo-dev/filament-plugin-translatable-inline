@@ -1,6 +1,14 @@
 # Changelog
 
-All notable changes to `parfaitementweb/filament-plugin-translatable-inline` will be documented in this file.
+All notable changes to `ncoo-dev/filament-plugin-translatable-inline` will be documented in this file.
+
+## 5.0.0 - 2026-05-09
+
+- Filament v5 support (forked from parfaitementweb/filament-plugin-translatable-inline)
+- Updated `filament/forms` constraint to `^5.0`
+- Updated `lara-zeus/spatie-translatable` constraint to `^2.0`
+- Fixed `livewire:initialized` event → `livewire:init` (Livewire v4 breaking change)
+- Added defensive fallback for `getDefaultLocales()` / `getTranslatableLocales()` plugin API
 
 ## 3.0.8 - 2024-03-16
 - added support for table repeater

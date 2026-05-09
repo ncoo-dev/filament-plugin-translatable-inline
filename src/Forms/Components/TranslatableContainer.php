@@ -94,7 +94,14 @@ class TranslatableContainer extends Component
             }
         }
 
-        $fallback = filament('spatie-translatable')->getDefaultLocales() ?? [];
+        try {
+            $plugin = filament('spatie-translatable');
+            $fallback = method_exists($plugin, 'getDefaultLocales')
+                ? ($plugin->getDefaultLocales() ?? [])
+                : ($plugin->getTranslatableLocales() ?? []);
+        } catch (\Exception) {
+            $fallback = [];
+        }
 
         return collect($resourceLocales ?? $fallback)->values();
     }
