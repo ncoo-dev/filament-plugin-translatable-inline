@@ -3,7 +3,7 @@
             x-data="{
                 open: false,
                 init() {
-                    document.addEventListener('livewire:initialized', () => {
+                    document.addEventListener('livewire:init', () => {
                         this.open = Boolean($refs.additionalContainer.querySelector(':invalid'));
                     })
                 },
